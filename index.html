@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/flowers.png" type="image/x-icon">
+    <title>Welcome Cantik</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,900&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            background: black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .greetings {
+            font-size: 6rem;
+            font-weight: 900;
+            display: flex;
+        }
+        .greetings > span {
+            animation: glow 3s ease-in-out infinite;
+        }
+        @keyframes glow {
+            0%, 100% {
+                color: #fff;
+                text-shadow: 0 0 12px #39c6d6, 0 0 50px #39c6d6, 0 0 100px #39c6d6;
+            }
+            10%, 90% {
+                color: #111;
+                text-shadow: none;
+            }
+        }
+        .greetings > span:nth-child(2) { animation-delay: .3s; }
+        .greetings > span:nth-child(3) { animation-delay: .6s; }
+        .greetings > span:nth-child(4) { animation-delay: .9s; }
+        .greetings > span:nth-child(5) { animation-delay: 1.2s; }
+        .greetings > .space { width: 20px; }
+        .greetings > span:nth-child(6) { animation-delay: 1.5s; }
+        .greetings > span:nth-child(7) { animation-delay: 1.8s; }
+        .greetings > span:nth-child(8) { animation-delay: 2.1s; }
+        .greetings > span:nth-child(9) { animation-delay: 2.4s; }
+        .greetings > span:nth-child(10) { animation-delay: 2.7s; }
+        .greetings > span:nth-child(11) { animation-delay: 3s; }
+
+        .description {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            color: white;
+        }
+        .button a {
+            text-decoration: none;
+            font-size: 1rem;
+            color: black;
+        }
+        button {
+            padding: 10px 20px;
+            border: none;
+            background: #39c6d6;
+            color: white;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        @media screen and (max-width:574px){
+            .greetings {
+                font-size: 3rem;
+                font-weight: 500;
+                text-align: center;
+            }
+            .description {
+                font-size: 1rem;
+            }
+            .button a {
+                font-size: .5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="greetings">
+        <span>H</span>
+        <span>A</span>
+        <span>L</span>
+        <span>L</span>
+        <span>O</span>
+        <span class="space"></span>
+        <span>C</span>
+        <span>A</span>
+        <span>N</span>
+        <span>T</span>
+        <span>I</span>
+        <span>K</span>
+    </div>
+    <div class="description">
+        <span>Aku ada hadiah spesial buat kamu!!</span>
+    </div>
+    <a href="flower.html">
+        <div class="button">
+            <button>Klik disini</button>
+        </div>
+    </a>
+</body>
+</html>
